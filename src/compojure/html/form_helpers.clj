@@ -11,8 +11,7 @@
   (:use compojure.html.gen
         compojure.control
         compojure.str-utils
-        clojure.contrib.def
-        clojure.contrib.seq-utils))
+        clojure.contrib.def))
 
 ;; Global parameters for easy default values
 
@@ -138,7 +137,7 @@
   (let [method-str (upcase-name method)]
     (into []
       (concat
-        (if (includes? [:get :post] method)
+        (if (#{:get :post} method)
           [:form {:method method-str :action action}]
           [:form {:method "POST" :action action}
            (hidden-field "_method" method-str)])

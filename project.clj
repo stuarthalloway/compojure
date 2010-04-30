@@ -1,7 +1,9 @@
-(defproject compojure "0.3.2"
+(defproject org.clojars.stuarthalloway/compojure "0.3.3-SNAPSHOT"
   :description "A concise web framework for Clojure"
-  :dependencies [[org.clojure/clojure "1.1.0"]
-                 [org.clojure/clojure-contrib "1.0-SNAPSHOT"]
+  :dependencies [[org.clojure/clojure
+                  "1.2.0-master-20100430.160229-59"]
+                 [org.clojure/clojure-contrib
+                  "1.2.0-20100430.160503-90"]
                  [commons-codec "1.3"]
                  [commons-io "1.4"]
                  [commons-fileupload "1.2.1"]
